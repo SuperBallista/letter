@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"
+    />
+
+    <style>
+      body {
+        font-family: "Nanum Pen Script", cursive;
+        background: #040025f5;
+        margin: 0;
+        background-image: url(bgimg.png); /* 이미지 경로 수정 */
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: bottom;
+      }
+
+      .letter-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .letter {
+        font-size: 14px;
+        color: green;
+        line-height: 1.5;
+        opacity: 0;
+        transform: translateY(100%);
+        transition: opacity 1s, transform 1s;
+        will-change: opacity, transform;
+      }
+
+      .show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @keyframes snowflake-fall {
+        0% {
+          transform: translateY(-100vh);
+        }
+        100% {
+          transform: translateY(100vh);
+        }
+      }
+
+      .snowflake {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        background-image: url("snowflake.png");
+        background-size: cover;
+        animation: snowflake-fall linear infinite;
+        animation-duration: 5s;
+      }
+
+      @keyframes sparkle {
+        0%,
+        100% {
+          color: #e44d26; /* 시작 및 종료 색상 */
+        }
+        50% {
+          color: #f8d856; /* 반짝이는 중간 색상 */
+        }
+      }
+
+      h1 {
+        animation: sparkle linear infinite;
+        animation-duration: 3s;
+        text-align: center;
+      }
+
+      .star {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        background: yellow;
+        opacity: 0.8;
+        animation: sparkle linear infinite;
+      }
+
+      .star1 {
+        width: 2px;
+        height: 2px;
+        animation-duration: 2s;
+      }
+
+      .star2 {
+        width: 3px;
+        height: 3px;
+        animation-duration: 3s;
+      }
+
+      .star3 {
+        width: 4px;
+        height: 4px;
+        animation-duration: 4s;
+      }
+    </style>
+    <title>소라에게 쓰는 편지</title>
+  </head>
+  <body>
+    <h1>소라에게 쓰는 편지</h1>
+    <div class="letter-container">
+      <div class="letter">소라에게</div>
+      <br />
+      <div class="letter">소라야 안녕</div>
+      <div class="letter">나 상진이야.</div>
+      <div class="letter">크리스마스를 맞아서 무엇을 할까 생각해보았어.</div>
+      <div class="letter">
+        그리고 소라를 위한 편지와 카드를 만들려고 페이지를 만들어보았어.
+      </div>
+
+      <div class="letter">
+        소라가 손편지도 좋아해서 손편지도 생각해봤는데 저번에 한 번 쓴 적이
+        있으니까
+      </div>
+
+      <div class="letter">
+        이번에는 조금 신선하게 웹페이지로 한 번 만들어보았어.
+      </div>
+
+      <div class="letter">소라가 마음에 들어했으면 좋겠다.</div>
+      <br />
+
+      <div class="letter">
+        소라는 크리스마스 때 출근하고, 늦게까지 일하느라 바쁘지?
+      </div>
+
+      <div class="letter">
+        그저께는 소라가 바쁘고 힘든 상황에서 나는 투정만 부린 것 같아서 미안한
+        마음이 들었어.
+      </div>
+
+      <div class="letter">
+        크리스마스 때 일하는 소라가 더 고생일 텐데 말이야.
+      </div>
+
+      <div class="letter">
+        그래도 소라를 보고 싶다는 마음은 계속 간절하더라.
+      </div>
+
+      <div class="letter">
+        그렇지만 이번 크리스마스는 좀 참아야겠지 하고 있어.
+      </div>
+
+      <div class="letter">
+        세상이 내 마음대로 되는 게 아니고 어쩔 수 없는 부분이 있으니까.
+      </div>
+      <br />
+      <div class="letter">그래서일까 내년 1월 22일이 더 기다려지긴 하더라.</div>
+
+      <div class="letter">
+        나는 요즘에 내년 1월 22일만 간절하게 바라보며 살고 있어.
+      </div>
+
+      <div class="letter">그 날은 소라를 직접 만나는 날이니까.</div>
+
+      <div class="letter">
+        우리 둘이 그날 꼭 만나서 즐거운 추억도 많이 쌓고 행복한 시간을 보내고
+        싶어.
+      </div>
+
+      <div class="letter">
+        나 저번에 소라 사진 본 거 때문에인지 더 기대가 되어.
+      </div>
+
+      <div class="letter">
+        그 때 사진으로 본 소라 모습은 정말 말로 형용할 수 없을 정도로 예쁘고
+        귀엽고 사랑스럽더라.
+      </div>
+
+      <div class="letter">
+        그래서 예쁜 소라 모습 보고 그 때 방송 온 남자들한테 질투도 살짝 나더라.
+      </div>
+
+      <div class="letter">
+        그리고 소라 마음 속에는 내가 있다는 걸 자랑하고 싶은 기분도 살짝 들고
+        그랬어.
+      </div>
+
+      <div class="letter">
+        그리고 내가 정말로 전생에 우주를 구한 용사 아닐까 하는 생각도 하고 있어.
+      </div>
+
+      <div class="letter">내 이상형은 이제 진심으로 소라라고 느끼고 있어.</div>
+
+      <div class="letter">
+        내가 아는 어떤 연예인이나 미인을 갖다 놔도 소라가 더 예쁘고
+        이상형이었어.
+      </div>
+
+      <div class="letter">이건 진심으로 하는 말이야.</div>
+      <br />
+      <div class="letter">
+        그리고 이렇게 예쁜 소라가 내가 좋다고 해서 정말 나는 소라가 늘 고마워.
+      </div>
+
+      <div class="letter">
+        그리고 항상 놓치고 싶지 않다는 생각을 정말 많이 해.
+      </div>
+
+      <div class="letter">
+        그래서 때로는 혼자 무리도 하고 자주 싸우기도 하는 거 같아.
+      </div>
+
+      <div class="letter">
+        그래도 이제 서로 덜 싸우고 소라 말을 정말 잘 듣는 소라의 상진이가 되고
+        싶어.
+      </div>
+
+      <div class="letter">
+        부족한 나를 이렇게 좋아해주는 소라가 정말 고마워서 앞으로는 더
+        잘해야겠다는 생각이 들어.
+      </div>
+      <div class="letter">나는 소라의 것일 때 제일 행복한 남자야.</div>
+      <br />
+      <div class="letter">
+        그러면 소라야 올해 크리스마스 잘 보내고 남은 연말 마무리도 잘 하길 바라.
+      </div>
+
+      <div class="letter">그리고 우리 꼭 1월 22일에 만나서 시작하자.</div>
+
+      <div class="letter">
+        사실 지금도 연인이란 느낌으로 생각하며 연락하고 있긴 해.
+      </div>
+
+      <div class="letter">
+        하지만 최소한 한번은 만나고 나서부터 1일이 되어야하는 거 아닐까 생각하고
+        있어.
+      </div>
+
+      <div class="letter">
+        보고 싶고 또 소라를 위해 더 써주고 싶은데 이거 편집도 해야하니까.
+      </div>
+      <div class="letter">이런 말 벌써 해도 되나 싶지만.... 사랑해 소라야.</div>
+      <div class="letter">
+        자꾸 이 말 일찍 쓰는 거 같지만 자동으로 튀어나오네.
+      </div>
+      <div class="letter">우리 만날 때까지 건강하고, 행복해지자 우리.</div>
+
+      <div class="letter">2023. 12. 24</div>
+      <div class="letter">상진이가</div>
+    </div>
+    <div class="stars"></div>
+
+    <!-- JavaScript로 눈송이 추가 -->
+    <script>
+      // 눈송이를 생성하는 함수
+      function createSnowflake() {
+        const snowflake = document.createElement("div");
+        snowflake.className = "snowflake";
+        document.body.appendChild(snowflake);
+
+        // 랜덤한 위치와 애니메이션 지속 시간 설정
+        snowflake.style.left = Math.random() * window.innerWidth + "px";
+        snowflake.style.animationDuration = Math.random() * 5 + 5 + "s";
+      }
+
+      // 일정 시간 간격으로 눈송이 생성
+      setInterval(createSnowflake, 1000);
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const letters = document.querySelectorAll(".letter");
+
+        letters.forEach((letter, index) => {
+          setTimeout(() => {
+            letter.classList.add("show");
+          }, index * 1000); // 1000ms(1초) 간격으로 편지가 나타납니다.
+        });
+
+        // 마지막 편지가 나타난 후 애니메이션을 위해 setTimeout 사용
+        setTimeout(() => {
+          letters.forEach((letter, index) => {
+            setTimeout(() => {
+              letter.classList.remove("show");
+            }, index * 1000);
+          });
+        }, (letters.length + 1) * 1000);
+      });
+
+      function createStar() {
+        const star = document.createElement("div");
+        star.className = "star star" + Math.ceil(Math.random() * 3);
+        document.querySelector(".stars").appendChild(star);
+
+        star.style.left = Math.random() * window.innerWidth + "px";
+        star.style.top = Math.random() * window.innerHeight + "px";
+      }
+
+      setInterval(createStar, 500);
+    </script>
+  </body>
+</html>
